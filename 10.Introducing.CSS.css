@@ -1,3 +1,54 @@
+* {
+    color: #ff0000
+}
+
 h1, h2 {
     font-family: Arial
+}
+
+/*
+ * Targets any element whose class attribute has the specific value. The type can be different. 
+ */
+.Pig {
+    color: #00ff00;
+}
+
+P.Monkey {
+    color: #0000ff;
+}
+
+#Chick {
+    color: #ffff00;
+}
+
+/*
+ * Matches an element that is a direct child of another.
+ */
+li>p {
+    color: #ff00ff;
+}
+
+ol>p {
+    color: #ff0000;
+}
+
+/*
+ * Matches an element that is a descendent of another specified element (not just a direct child of that element)
+ */
+ol p {
+    font-size: 20;
+}
+
+/*
+ * Matches an element that is the next sibling of another.
+ */
+h1+p {
+    font-size: 25;
+}
+
+/*
+ * Matches an element that is a sibling of another, although it does not have to be the directly preceding element.
+ */
+h3~p {
+    font-size: 30;
 }
