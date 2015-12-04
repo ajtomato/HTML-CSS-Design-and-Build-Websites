@@ -17,6 +17,20 @@
                 min-height: 10px;
                 max-height: 20px;
             }
+            #overflowing_content_hidden {
+                width: 100px;
+                background-color: #0000ff;
+                min-height: 10px;
+                max-height: 30px;
+                overflow: hidden;
+            }
+            #overflowing_content_scroll {
+                width: 100px;
+                background-color: #0000ff;
+                min-height: 10px;
+                max-height: 80px;
+                overflow: scroll;
+            }
         </style>
     </head>
     <body>
@@ -28,6 +42,14 @@
         </div>
         <div id="limited_height">
             Limited Height
+        </div>
+        <div>Another Paragraph</div>
+        <div id="overflowing_content_hidden">
+            Overflowing Content Hidden
+        </div>
+        <div>Another Paragraph</div>
+        <div id="overflowing_content_scroll">
+            Overflowing Content Scroll Scroll
         </div>
         <div>Another Paragraph</div>
     </body>
