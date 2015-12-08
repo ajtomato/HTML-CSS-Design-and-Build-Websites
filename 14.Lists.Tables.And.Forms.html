@@ -16,6 +16,10 @@
             #list_style {
                 list-style: circle inside;
             }
+            #test_table td {
+                border: 1px solid #0088dd;
+                empty-cells: hide; /* show, hide, inherit */
+            }
         </style>
     </head>
     <body>
@@ -45,5 +49,15 @@
             <li>list</li>
             <li>style</li>
         </ul>
+        <table id="test_table">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
     </body>
 </html>
