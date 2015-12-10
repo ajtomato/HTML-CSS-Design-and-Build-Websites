@@ -24,6 +24,19 @@
                 left: 100px;
                 background-color: #0000ff;
             }
+            #z_index_1 {
+                position: absolute;
+                background-color: #ffff00;
+                top: 100px;
+                z-index: 2; /* This is on top of the part whose z-index is 1. */
+            }
+            #z_index_2 {
+                position: absolute;
+                background-color: #00ffff;
+                top: 100px;
+                left: 20px;
+                z-index: 1;
+            }
         </style>
     </head>
     <body>
@@ -34,5 +47,7 @@
         </div>
         <div>Hello World</div>
         <div id="fixed_positioning">Fixed Positioning</div>
+        <div id="z_index_1">Z Index 1</div>
+        <div id="z_index_2">Z Index 2</div>
     </body>
 </html>
