@@ -37,9 +37,12 @@
                 left: 20px;
                 z-index: 1;
             }
-            #floating_elements {
+            .floating_elements {
                 float: left;
                 width: 100px;
+            }
+            #clear {
+                clear: left; /* The left-hand side of the box should not touch any other elements appearing in the same containing element. */
             }
         </style>
     </head>
@@ -53,7 +56,8 @@
         <div id="fixed_positioning">Fixed Positioning</div>
         <div id="z_index_1">Z Index 1</div>
         <div id="z_index_2">Z Index 2</div>
-        <div id="floating_elements">Floating Elements</div>
-        <div>Hello world</div>
+        <div class="floating_elements">Floating Elements</div>
+        <div class="floating_elements">Hello world</div>
+        <div class="floating_elements" id="clear">Another Floating Elements</div>
     </body>
 </html>
